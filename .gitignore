@@ -1,0 +1,71 @@
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+# backend
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+# Ignore bundler config.
+backend/.bundle
+
+# Ignore the default SQLite database.
+backend/db/*.sqlite3
+backend/db/*.sqlite3-*
+
+# Ignore all logfiles and tempfiles.
+backend/log/*
+backend/tmp/*
+
+# Ignore pidfiles, but keep the directory.
+backend/tmp/pids/*
+
+# Ignore uploaded files in development.
+backend/storage/*
+backend/tmp/storage/*
+
+# Ignore master key for decrypting credentials and more.
+backend/config/master.key
+
+
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+# freontend
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+# dependencies
+frontend/node_modules
+frontend/.pnp
+.pnp.js
+
+# testing
+frontend/coverage
+
+# next.js
+frontend/.next/
+frontend/out/
+
+# production
+frontend/build
+
+# misc
+
+# debug
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# local env files
+frontend/.env*.local
+
+# vercel
+frontend/.vercel
+
+# typescript
+frontend/next-env.d.ts
+
+.DS_Store
+*.pem
+*.tsbuildinfo
+!/log/.keep
+!/tmp/.keep
+!/tmp/pids/
+!/tmp/pids/.keep
+!/storage/.keep
+!/tmp/storage/
+!/tmp/storage/.keep
