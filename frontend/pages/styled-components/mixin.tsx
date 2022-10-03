@@ -20,6 +20,7 @@ const BaseLink = (props: BaseLinkProps)=>{
     </Link>
   )
 }
+// next componentに追加で styleを当てる
 const StyledLink = styled(BaseLink)`
   color: #f70;
   font-size: 16px;

@@ -7,6 +7,10 @@ import styled from 'styled-components'
 const H1 = styled.h1`
   color:red;
 `
+const P = styled.p`
+  color: ${(props) => props.theme.colors.orange};
+  font-size: ${(props) => props.theme.fontSizes[3]};
+`
 
 const Home:NextPage = () => {
   return (
@@ -22,10 +26,10 @@ const Home:NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </H1>
 
-        <p className={styles.description}>
+        <P className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
-        </p>
+        </P>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
