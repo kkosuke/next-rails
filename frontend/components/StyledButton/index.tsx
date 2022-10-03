@@ -1,15 +1,15 @@
 import styled, { css } from 'styled-components'
 
 const variants = {
-  primary : {
-    color: '#fff'
+  primary: {
+    color: '#fff',
   },
   success: {
-    color: '#333'
+    color: '#333',
   },
   transparent: {
-    color: '#f70'
-  }
+    color: '#f70',
+  },
 } as const
 
 type StyledButtonProps = {
@@ -17,7 +17,7 @@ type StyledButtonProps = {
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
-  ${({variant}) => {
+  ${({ variant }) => {
     const style = variants[variant]
     return css`
       color: ${style.color};
