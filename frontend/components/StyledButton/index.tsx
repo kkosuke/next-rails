@@ -27,4 +27,5 @@ export const StyledButton = styled.button<StyledButtonProps>`
   font-size: 14px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  cursor: pointer;
 `
