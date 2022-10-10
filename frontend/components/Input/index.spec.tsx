@@ -40,8 +40,7 @@ describe('Input', () => {
       name: 'Reset',
     }) as HTMLButtonElement
     fireEvent.click(buttonNode)
-
-    // input の値が、指定通りあるか
+    // リセットボタンのテスト
     expect(inputNode).toHaveValue('')
   })
 })
