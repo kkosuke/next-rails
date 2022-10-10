@@ -1,18 +1,24 @@
-import type {NextPage} from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 
+import { DelayInput } from '../components/DelayInput'
+
 const H1 = styled.h1`
-  color:red;
+  color: red;
 `
 const P = styled.p`
   color: ${(props) => props.theme.colors.orange};
   font-size: ${(props) => props.theme.fontSizes[3]};
 `
 
-const Home:NextPage = () => {
+const some = () => {
+  console.log('aaaa')
+}
+
+const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -30,6 +36,10 @@ const Home:NextPage = () => {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </P>
+
+        <div>
+          <DelayInput onChange={some}></DelayInput>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
