@@ -1,6 +1,5 @@
-FROM ruby:3.0.0
+FROM ruby:2.6.6
 
-ENV BUNDLE_VERSION 2.2.3`
 ENV APP /usr/src/app
 
 # netcat is for nc command

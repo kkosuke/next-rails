@@ -1,4 +1,8 @@
 # 起動方法
+ruby 2.6.6
+rails 6.0.3
+node v18.7.0
+
 ##  手順1
 ```
 git clone git@github.com:kkosuke/next-rails.git
