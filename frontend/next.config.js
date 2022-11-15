@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   compiler: {
+    // styledComponentsの有効化
     styledComponents: true
   }
 }
